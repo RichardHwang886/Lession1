@@ -89,3 +89,35 @@ console.log('pi 2: ' + circle2.getPI() +' [' + circle2.getProted()+']');
 
 let circle3 = new  ExtCircleThird("3圓"); 
 console.log('get obj 3: ' + JSON.stringify( circle3.getObj()) +' [' + circle2.getProted()+']');
+
+
+// let add = function (x: number, y: number): number {
+//    return x + y;
+// };
+
+
+// function add(x: number, y: number): number {
+//    return x + y;
+// };
+
+let n1 =1, n2=4;
+
+// let add = function (x: number, y: number): number {
+//   // y =10;
+//    return x + y;
+// };
+//console.log(`ADD RESULT: ${n1} + ${n2} = ${add(n1,n2)}`); //ADD RESULT: 1 + 4 = 11
+
+let p= {x:1, y:4}
+//let add = function (o:{x: number, y: number}): number {
+let add = (o:{x: number, y: number}): number => {
+      o.y =10;
+    return o.x + o.y;
+ };
+
+
+
+ // console.log(`ADD RESULT: ${p.x} + ${p.y} = ${add(p)}`);   //ADD RESULT: 1 + 4 = 11
+ let result = add(p);
+ console.log(`ADD RESULT: ${p.x} + ${p.y} = ${result}`); //  //ADD RESULT: 1 + 10 = 11
+
